@@ -39,7 +39,7 @@ def load_raw(df, engine=None):
     with engine.begin() as conn:
         conn.execute(text(DDL))
         conn.execute(text("TRUNCATE TABLE raw_reviews"))
-    df.to_sql("raw_reviews", engine, if_exists="append", index=False)
+        df.to_sql("raw_reviews", conn, if_exists="append", index=False)
     return len(df)
 
 
