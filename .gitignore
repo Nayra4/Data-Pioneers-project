@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Secrets: never commit passwords or API keys
+.env
+
+# Data: large files, and the dataset license is not stated
+data/
+*.jsonl.gz
+*.parquet
+
+# Models and caches
+.cache/
+models/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
