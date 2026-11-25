@@ -24,3 +24,7 @@ Data: [Amazon Reviews 2023](https://amazon-reviews-2023.github.io) (McAuley Lab)
 | `tests/` | Unit tests |
 
 > Setup, usage and results sections will be added as the project progresses.
+## Ingestion
+
+Reviews are read from three sources (CSV, REST API, PostgreSQL) and stored in `raw_reviews`.
+See [docs/handoff_team3.md](docs/handoff_team3.md) for setup and run steps.
